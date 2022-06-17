@@ -13,6 +13,7 @@
 	<artifactId>springboot</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>springboot</name>
+	<packaging>war</packaging>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
@@ -25,9 +26,9 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 			<exclusions>
-			<!-- Exclude -->			
+				<!-- Exclude -->
 				<exclusion>
-				
+
 				</exclusion>
 			</exclusions>
 		</dependency>
@@ -84,10 +85,19 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
+				<!-- <configuration>
 					<executable>true</executable>
-				</configuration>
+				</configuration> -->
 			</plugin>
+
+			<!-- <plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>11</source>1.11 not working
+					<target>11</target>1.11 not working
+				</configuration>
+			</plugin> -->
 		</plugins>
 	</build>
 
