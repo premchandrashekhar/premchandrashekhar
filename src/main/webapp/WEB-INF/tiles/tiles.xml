@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+
+<tiles-definitions>
+
+	<definition name="500"	template="/error-pages/500.jsp"></definition>
+	<definition name="error" template="/error-pages/404.jsp"></definition>
+	<definition name="404" template="/error-pages/404.jsp"></definition>
+
+	<definition name="home.definition" template="/homepages/masterpages/masterpage.jsp">
+		<put-attribute name="header" value="/homepages/masterpages/header.jsp" />
+		<put-attribute name="footer" value="/homepages/masterpages/footer.jsp" />
+		<put-attribute name="navigation" value="/homepages/masterpages/navigation.jsp" />
+	</definition>
+
+	<definition name="welcome" template="/account/welcome.jsp"></definition>
+
+	<!-- <definition name="welcome" extends="home.definition">
+		<put-attribute name="mainbody" value="/homepages/childpages/homepage.jsp" />
+		<put-attribute name="title" value="Home Page" />
+	</definition> -->
+	
+	<definition name="about" extends="home.definition">
+		<put-attribute name="mainbody" value="/homepages/childpages/aboutpage.jsp" />
+		<put-attribute name="title" value="About Page" />
+	</definition>
+	
+	<definition name="contacts" extends="home.definition">
+		<put-attribute name="mainbody" value="/homepages/childpages/contactspage.jsp" />
+		<put-attribute name="title" value="Contacts Page" />
+	</definition>
+	
+</tiles-definitions>

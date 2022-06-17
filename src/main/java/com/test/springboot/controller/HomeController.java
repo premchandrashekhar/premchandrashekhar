@@ -16,13 +16,13 @@ public class HomeController {
 	public String home(Model model) {
 		System.out.println("-------------------------------------------------------");
 		//org.springframework.beans.BeanUtils.copyProperties(model, model);
-		return "home";
+		return "welcome";
 	}
 	
 	@GetMapping("/jsp")
 	public String jspHome(Model model) {
 		System.out.println("-------------------------------------------------------");
-		return "jspHome";
+		return "home";
 	}
 
 }
