@@ -16,7 +16,7 @@
 	<packaging>war</packaging>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>11</java.version>
+		<!-- <java.version>11</java.version> -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	</properties>
@@ -85,9 +85,9 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<!-- <configuration>
+				<configuration>
 					<executable>true</executable>
-				</configuration> -->
+				</configuration>
 			</plugin>
 
 			<!-- <plugin>
